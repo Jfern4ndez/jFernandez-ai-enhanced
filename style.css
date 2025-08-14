@@ -1,0 +1,20 @@
+
+#schoolImg {
+    width: 50px;
+}
+
+#aboutMeImg {
+    width: 50px;
+}
+
+#linkedInImg {
+    width: 50px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: end;
+    justify-content: space-around;
+    background-color:  ;
+}
+
