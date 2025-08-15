@@ -1,20 +1,100 @@
-
-#schoolImg {
-    width: 50px;
+body {
+    background-color: rgba(0, 0, 0, 0.913);
 }
 
-#aboutMeImg {
-    width: 50px;
+#phoneImg {
+    padding-top: 4px;
+    width: 66px;
+    margin-left: 870px;
+}
+
+#fernandez {
+    width: 75px;
+    margin-left: 20px
+}
+
+#name {
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+
+#igImg {
+    padding-top: 5px;
+    width: 65px;
+    margin-left: 40px;
+}
+
+#gitHubImg {
+    width: 75px;
+    margin-left: 38px;
 }
 
 #linkedInImg {
-    width: 50px;
+    width: 68px;
+    margin-left: 30px;
 }
 
 .navBar {
     display: flex;
-    justify-content: end;
-    justify-content: space-around;
-    background-color:  ;
+    background-color: white;
+    border-radius: 20px;
 }
 
+#collage {
+
+    padding: 2px;
+    margin-top: 50px;
+    width: 900px;
+    border: 4px solid grey;
+    margin-left: 200px
+    
+}
+
+.houston {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.phone {
+    background-color: white;
+    border-radius: 10px;
+    width: 165px;
+    padding-left: 5px;
+    margin-left: 1200px;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 6px;
+}
+
+#leftImages {
+    width: 30px;
+    display: inline-block;
+}
+
+h1 {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier;
+}
+
+.leftSide {
+    margin-top: 50px;
+    width: 540px;
+    color: white;
+}
+
+.pi {
+    font-family: 'Courier New', Courier;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#hobImage{
+    width: 60px;
+}
