@@ -1,1 +1,1 @@
-1. Make a wireframe of your website
+Whenever you go live on VS Coode, make sure zoom it at 75% once you have the webpage on your web browser
