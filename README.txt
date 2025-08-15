@@ -1,1 +1,1 @@
-Whenever you go live on VS Coode, make sure zoom it at 75% once you have the webpage on your web browser
+Whenever you go live on VS Code, make sure zoom it at 75% once you have the webpage on your web browser

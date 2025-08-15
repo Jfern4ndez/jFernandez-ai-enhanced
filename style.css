@@ -1,100 +1,142 @@
 body {
     background-color: rgba(0, 0, 0, 0.913);
-}
-
-#phoneImg {
-    padding-top: 4px;
-    width: 66px;
-    margin-left: 870px;
-}
-
-#fernandez {
-    width: 75px;
-    margin-left: 20px
-}
-
-#name {
-    padding-left: 5px;
-    padding-top: 5px;
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: bold;
-    
-}
-
-#igImg {
-    padding-top: 5px;
-    width: 65px;
-    margin-left: 40px;
-}
-
-#gitHubImg {
-    width: 75px;
-    margin-left: 38px;
-}
-
-#linkedInImg {
-    width: 68px;
-    margin-left: 30px;
-}
-
-.navBar {
-    display: flex;
-    background-color: white;
-    border-radius: 20px;
-}
-
-#collage {
-
-    padding: 2px;
-    margin-top: 50px;
-    width: 900px;
-    border: 4px solid grey;
-    margin-left: 200px
-    
-}
-
-.houston {
-    display: flex;
-    flex-flow: wrap row;
-}
-
-.phone {
-    background-color: white;
-    border-radius: 10px;
-    width: 165px;
-    padding-left: 5px;
-    margin-left: 1200px;
-    font-size: larger;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 6px;
-}
-
-#leftImages {
-    width: 30px;
-    display: inline-block;
-}
-
-h1 {
-    display: inline-block;
-    margin-left: 10px;
-    font-family: 'Courier New', Courier;
-}
-
-.leftSide {
-    margin-top: 50px;
-    width: 540px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     color: white;
 }
 
-.pi {
-    font-family: 'Courier New', Courier;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: larger;
+/* Navigation Bar */
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
 }
 
-#hobImage{
-    width: 60px;
+.navBar img {
+    height: 50px;
+    width: auto;
+}
+
+#fernandez {
+    border-radius: 50%;
+}
+
+#name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 15px;
+    color: black;
+}
+
+.navBar a img {
+    transition: transform 0.2s ease;
+}
+
+.navBar a img:hover {
+    transform: scale(1.1);
+}
+
+/* Phone Box */
+.phone {
+    background-color: white;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 10px auto;
+    display: none; /* Hidden by default */
+}
+
+.phone.visible {
+    display: block;
+}
+
+/* Main Layout */
+.houston {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.leftSide {
+    flex: 1 1 300px;
+}
+
+aside {
+    flex: 1 1 500px;
+}
+
+/* Section Titles with Icons */
+.mtimg, .mtimm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#leftImages, #hobImage {
+    width: 30px;
+    flex-shrink: 0;
+}
+
+#hobImage {
+    width: 50px;
+}
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+/* Lists */
+.pi {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.pi a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+.pi a:hover {
+    text-decoration: underline;
+}
+
+/* Collage Image */
+#collage {
+    width: 100%;
+    max-width: 900px;
+    border: 4px solid grey;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navBar {
+        justify-content: center;
+    }
+    #name {
+        font-size: 1.4rem;
+    }
+    .houston {
+        flex-direction: column;
+        align-items: center;
+    }
+    aside {
+        order: -1;
+    }
 }

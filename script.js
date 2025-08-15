@@ -1,14 +1,18 @@
-let phoneRef = document.querySelector("#phoneImg");
-let phone = document.querySelector(".phone");
-let name = document.querySelector(".name")
+document.addEventListener("DOMContentLoaded", () => {
+    const phoneIcon = document.querySelector("#phoneImg");
+    const phoneBox = document.querySelector(".phone");
+    const nameEl = document.querySelector(".name");
 
-phoneRef.onmouseover = function() {
-        phone.style.display = "block"
-    }
-    
-phoneRef.onmouseout = function() {
-        phone.style.display = "none";
-    }
+    // Update name text
+    nameEl.textContent = "Name: Jesus";
 
-name.innerHTML = "Name: Jesus"
+    // Show/Hide phone number on hover
+    phoneIcon.addEventListener("mouseenter", () => {
+        phoneBox.classList.add("visible");
+    });
+
+    phoneIcon.addEventListener("mouseleave", () => {
+        phoneBox.classList.remove("visible");
+    });
+});
 
